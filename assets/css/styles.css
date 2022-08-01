@@ -17,6 +17,16 @@ body {
     padding: 1%;
 }
 
+.btn {
+    width: 220px;
+    height: 60px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    background-color: #e33e33;
+    color: #f9f5f5;
+}
+
 /* Responsive layout - when the screen is 10800px wide or larger*/
 @media screen and (min-width: 1080px) {
 }
