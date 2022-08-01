@@ -1,3 +1,22 @@
+body {
+    background-color: #a095ab;
+    color: #291d2e;
+}
+/*  Game area  */
+.game-area{
+    background-color: #291d2e;
+    color: #d1fd02;
+    box-sizing: border-box;
+    position: relative;
+    width: 70%;
+    height: 70vh;
+    max-width: 830px;
+    max-height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+
 /* Responsive layout - when the screen is 10800px wide or larger*/
 @media screen and (min-width: 1080px) {
 }
