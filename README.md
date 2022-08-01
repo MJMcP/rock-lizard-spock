@@ -1,108 +1,92 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# <em>'Rock! Lizard! Spock!'</em>
 
-Welcome USER_NAME,
+'Rock! Lizard! Spock!' is an interactive front-end site that responses to the user's choice of game token against an automated generated token. The site's aim is to provide the user with a portal of entertainment as they partake in a game of chance, while documenting within the game the user's success tally and options to continue or quit the game.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<!--THE LIVE SITE can be accessed through this [link]
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Photos of the responsive site-->
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# Contents
+- [User Experience UX](#user-experience-ux)
+  - [External User Goals](#external-user-goal)
+  - [Site Owner's Goals](#site-owners-goals)
+  <!-- [Wireframes](#wireframes)
+  - [Site Structure](#site-structure)
+  - [Design Choices](#design-choices)
+    - [Typography](#typography)
+    - [Colour Scheme](#colour-scheme)
+<!-- [Features](#features)
+  - [Home](#home)
+    - [Navigation Bar](#navigation-bar)
+    - [Introduction](#introduction)
+    - [Sub-Sections](#sub-sections)
+    - [Footer](#footer)
+- [Future Features](#features-left-to-implement)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
+    - [Validator Testing](#validator-testing)
+    - [Unfixed Bugs](#unfixed-bugs)
+- [Deployment](#deployment)
+- [Credits](#credits)
+  - [Content](#content)
+  - [Media](#media)
+- [Acknowledgements](#acknowledgements)
+-->
 
-`python3 -m http.server`
+# User Experience UX
+The user demographic is anyone with access to an internet accessible device from age 6 years and up. By this age, the user will have the literary and critical thinking skills to follow the instructions and complete the tasks in order to complete the game.
 
-A blue button should appear to click: _Make Public_,
+[Back to Contents](#contents)
 
-Another blue button should appear to click: _Open Browser_.
+## External User Goals  
+- As a user, I want to access the game all on one page.
+- As a user, I want to understand the instructions as they is presented to me.
+- As a user, I want to clearly make out the icons and buttons to enable play.
+- As a user, I want to clearly see the outcome of my game performance.
+- As a user, I want to exit the game early should I wish to.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Site Owner's Goals
+- As the owner, I want to provide an entertaining game that can be played by the user through their preferred device.
+- As the owner, I want the user to play the game for a limited number of tries before offering them the opportunity of another round.
+- As the owner, I want to provide a score tracking function that will stay increment wins and losses until the player reaches a best-out-of-5 tally.
 
-A blue button should appear to click: _Make Public_,
+[Back to Contents](#contents)
 
-Another blue button should appear to click: _Open Browser_.
+ <!-- Wireframes
+  Site Structure
+  Design Choices
+  - Typography
+  - Colour Scheme
+  
+Features
+ - Home
+ - Navigation Bar
+ - Introduction
+ - Sub-Sections
+ - Footer
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Future Features to implement-->
 
-To log into the Heroku toolbelt CLI:
+## Technologies Used
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+In the creation of this project I have used the following:
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- Balsamiq to create the wireframes.
+- HTML5 to provide the content and structure for the website.
+- CSS to provide the styling.
+- JavaScript to provide the responsive support needed to allow for game interaction. 
+- Github to host and edit the website.
+- Gitpod to deploy the website.
 
-------
+[Back to Contents](#contents)
 
-## Release History
+<!--Testing
+  - Validator Testing
+  - Unfixed Bugs
+Deployment
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+Credits
+  -Content  
+  - Media
+Acknowledgements
