@@ -63,8 +63,9 @@ i {
     margin: auto;
     font-size: 5rem;
     letter-spacing: 1.5rem;
+    --fa-animation: fade;
     --fa-animation-duration: 3s;
-    --fa-fade-opacity: 0.6;
+    --fa-fade-opacity: 0.4;
 }
 
 td {

@@ -23,7 +23,7 @@ Photos of the responsive site-->
     - [Sub-Sections](#sub-sections)
     - [Footer](#footer) -->
 - [Future Features to Implement](#future-features-to-implement)
-- [Technologies Used]
+- [Technologies Used](#technologies-used)
 - [Testing](#testing)
     - [Validator Testing](#validator-testing)
     - [Unfixed Bugs](#unfixed-bugs)
@@ -81,6 +81,7 @@ Due to the desire to visually differientiate the main game play and game exit bu
   
 <!--Features
  - Home
+ This is the launch page for the game. The user will read the games instructions and choose one of animated icons. This will awaken the green <em>Engage</em> button in order to activate the random generator that will choose the computers choice. Once the button has been clicked, the game-area will alter to reflect the user's choice and the computer'c choice. The screen will also show a tag line that will iterate whether you won, lost or tied with the computer.
  - Navigation Bar
  - Introduction
  - Sub-Sections
