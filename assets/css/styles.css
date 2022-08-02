@@ -7,12 +7,25 @@ body {
 
 h1 {
     font-family: "Merriweather Sans", sans-serif;
-    font-size: 3.5rem;
-    text-align: center;
+    font-size: 3rem;
+    text-align: center;    
 }
 
-/*  Game area  */
-.game-area{
+table, td {
+    font-size: 1rem;
+    text-align: center;
+    padding: .5rem;
+}
+
+th {
+    font-size: 1.25rem;
+    text-align: center;
+    padding: .5rem;
+}
+
+/*  Game field  */
+
+.game-area {
     background-color: #291d2e;
     color: #d1fd02;
     box-sizing: border-box;
@@ -59,8 +72,48 @@ h1 {
     color: #f9f5f5;
 }
 
+.picked {
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
-/* Responsive layout - when the screen is 10800px wide or larger*/
+/*Results Area*/
+.results-area {
+    clear:both; 
+    display: flex;
+    flex-direction: row;
+    max-width: 830px;
+    margin: 1rem;
+}
+
+.cap-tally, .comp-tally {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    text-align: justify;
+    margin-left: 10vw;
+}
+
+.cap-tally, .exit {
+    clear: both;
+    display: flex;
+    flex-direction: row;        
+    padding: 1rem;
+}
+
+.exit {
+    margin-left: 10vw;
+}
+
+.comp-tally {
+    clear: both;
+    display: flex;                
+    flex-direction: row;       
+}
+
+/* Responsive layout - when the screen is 1080px wide or larger*/
 @media screen and (min-width: 1080px) {
 }
 
@@ -77,7 +130,6 @@ h1 {
         text-align: center;
     }
 
-    
     .game-area{
         width: 90%;
         height: 90vh;
@@ -106,6 +158,44 @@ h1 {
         height: 60px;
     }
 
+    .game-choice {
+        clear: both;
+        display: flex ;
+    }
+
+    .results-area {
+        clear:both; 
+        display: flex;
+        flex-direction: column;
+        min-width: 272px;
+        margin:0;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .cap-tally, .comp-tally {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+        text-align: justify;
+        margin-left: 0;
+    }
+    
+    .cap-tally, .exit {
+        clear: both;
+        display: flex;
+        flex-direction: row;        
+    }
+    
+    .exit {
+        margin-left:0;
+    }
+    
+    .comp-tally {
+        clear: both;
+        display: flex;                
+        flex-direction: row;       
+    }
     
 
 }
