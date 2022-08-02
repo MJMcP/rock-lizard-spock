@@ -24,7 +24,7 @@ body {
     box-sizing: border-box;
     position: relative;
     width: 70%;
-    height: 70vh;
+    height: 70%;
     max-width: 830px;
     max-height: 450px;
     margin-left: auto;
@@ -62,7 +62,7 @@ i {
     justify-content: center;
     margin: auto;
     font-size: 5rem;
-    letter-spacing: 1.5rem;
+    padding: 1rem;
     --fa-animation: fade;
     --fa-animation-duration: 3s;
     --fa-fade-opacity: 0.4;
@@ -163,7 +163,7 @@ th {
 
     .game-area{
         width: 90%;
-        height: 90vh;
+        height: 95%;
         margin-left: auto;
         margin-right: auto;
         padding: 1%;
@@ -181,6 +181,26 @@ th {
   
     .game-choice {
         display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: .5rem;
+        letter-spacing: 1.5px;
+    }
+
+    i {  
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+        font-size: 4.5rem;
+        --fa-animation: fade;
+        --fa-animation-duration: 3s;
+        --fa-fade-opacity: 0.4;
+      }
+
+    span {
+        text-align: center;
     }
 
     .btn-rd {
