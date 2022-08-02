@@ -1,26 +1,19 @@
+/*-- Global style--*/
+
 body {
     background-color: #a095ab;
     color: #f9f5f5;
     font-family: Cabin, "Quattrocento Sans", sans-serif;
     font-size: 16px;
+    text-align: center;
+    letter-spacing: 1.5px;
 }
 
-h1 {
+/* heading section */
+.heading {
     font-family: "Merriweather Sans", sans-serif;
     font-size: 3rem;
     text-align: center;    
-}
-
-table, td {
-    font-size: 1rem;
-    text-align: center;
-    padding: .5rem;
-}
-
-th {
-    font-size: 1.25rem;
-    text-align: center;
-    padding: .5rem;
 }
 
 /*  Game field  */
@@ -44,9 +37,38 @@ th {
     text-align: center;
 }
 
-.choice1 {
+.choice-first {
     font-size: 2rem;
     text-align: center;
+}
+
+.game-choice {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    padding: 10px,0;
+}
+
+.game-rules {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+td {
+    display: flexbox;
+    font-size: 1rem;
+    text-align: center;
+    padding: .5rem;
+}
+
+th {
+    display: flexbox;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: .5rem;
 }
 
 .btn {
@@ -73,42 +95,40 @@ th {
 }
 
 .picked {
-    clear: both;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: baseline;
 }
 
 /*Results Area*/
 .results-area {
-    clear:both; 
     display: flex;
-    flex-direction: row;
-    max-width: 830px;
+    min-width: 830px;
     margin: 1rem;
+    justify-content: space-around;
+    flex-direction: row;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
 }
 
 .cap-tally, .comp-tally {
     font-size: 1.5rem;
     padding-top: 1rem;
     text-align: justify;
-    margin-left: 10vw;
+  
 }
 
-.cap-tally, .exit {
-    clear: both;
+.cap-tally, .comp-tally, .exit {
     display: flex;
     flex-direction: row;        
     padding: 1rem;
 }
 
-.exit {
-    margin-left: 10vw;
-}
 
 .comp-tally {
-    clear: both;
     display: flex;                
     flex-direction: row;       
 }
@@ -123,9 +143,9 @@ th {
 
 
 /* Responsive layout - when the screen is 320px wide*/
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
 
-    h1 {
+    .heading {
         font-size: 2.5rem;
         text-align: center;
     }
@@ -133,7 +153,6 @@ th {
     .game-area{
         width: 90%;
         height: 90vh;
-        max-width: 830px;
         margin-left: auto;
         margin-right: auto;
         padding: 1%;
@@ -144,10 +163,15 @@ th {
         text-align: center;
     }
     
-    .choice1 {
+    .choice-first {
         font-size: 1.5rem;
         text-align: center;
     }
+  
+    .game-choice {
+        display: flex;
+    }
+
     .btn-rd {
         width: 150px;
         height: 60px;
@@ -157,21 +181,16 @@ th {
         width: 150px;
         height: 60px;
     }
-
-    .game-choice {
-        clear: both;
-        display: flex ;
-    }
-
+    
     .results-area {
-        clear:both; 
-        display: flex;
+        display: inline-flex;
         flex-direction: column;
         min-width: 272px;
-        margin:0;
-        flex-wrap: nowrap;
+        margin: 0;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
+        align-content: center;
     }
 
     .cap-tally, .comp-tally {
@@ -182,7 +201,6 @@ th {
     }
     
     .cap-tally, .exit {
-        clear: both;
         display: flex;
         flex-direction: row;        
     }
@@ -192,7 +210,6 @@ th {
     }
     
     .comp-tally {
-        clear: both;
         display: flex;                
         flex-direction: row;       
     }
