@@ -1,6 +1,5 @@
-/**
- * Constructs the table for rules
- */
+// Constructs the table for rules
+ 
 let gameMoves = [
     {
         choice: 'rock',
@@ -30,27 +29,25 @@ let gameMoves = [
 ];
 
 function buildTable(){
-  let hTable = document.createElement('table');
-  hTable.id = 'game-rules';
+  let hTable = document.createElement("table");
+  hTable.id = "game-rules";
  
   let tableHtml = `
     <table>
         <thead>
             <tr>
-                <td colspan>BEATS</td>    
+                <th>BEATS</th>    
             </tr>
         </thead>
         <tbody>
     </tbody>
     </table>`;
 
-    let rows = document.getElementsByTagName('tbody')[2].children;
-
     let picks = [];
 
     for (let pick of picks) {
         let pix = {};
-        let cells = pick.children;
+        let cells = gameMoves.children;
         pix.beat1 = cells[0].textContent;
         pix.beat2 = cells[1].textContent;
         picks.push(pix);
@@ -59,5 +56,5 @@ function buildTable(){
     }
 
     let data = buildTable();
-    document.getElementById('game-rules').innerHTML = data;
+    document.getElementById("game-rules").innerHTML = data;
 }
