@@ -9,10 +9,10 @@ Photos of the responsive site-->
 
 # Contents
 - [User Experience UX](#user-experience-ux)
-  - [External User Goals](#external-user-goal)
+  - [External User Goals](#external-user-goals)
   - [Site Owner's Goals](#site-owners-goals)
   <!-- [Wireframes](#wireframes)
-  - [Site Structure](#site-structure)
+  - [Site Structure](#site-structure)-->
   - [Design Choices](#design-choices)
     - [Typography](#typography)
     - [Colour Scheme](#colour-scheme)
@@ -21,9 +21,9 @@ Photos of the responsive site-->
     - [Navigation Bar](#navigation-bar)
     - [Introduction](#introduction)
     - [Sub-Sections](#sub-sections)
-    - [Footer](#footer)
-- [Future Features](#features-left-to-implement)
-- [Technologies Used](#technologies-used)
+    - [Footer](#footer) -->
+- [Future Features to Implement](#future-features-to-implement)
+- [Technologies Used]
 - [Testing](#testing)
     - [Validator Testing](#validator-testing)
     - [Unfixed Bugs](#unfixed-bugs)
@@ -54,19 +54,40 @@ The user demographic is anyone with access to an internet accessible device from
 [Back to Contents](#contents)
 
  <!-- Wireframes
-  Site Structure
-  Design Choices
-  - Typography
-  - Colour Scheme
+  Site Structure -->
+## Design Choices
   
-Features
+### Typography
+The fonts chosen for this project were <em>Merriweather Sans</em> for the headings (h1, h2 etc), <em>Cabin</em> for the body text and a third text of <em>Quattrocento Sans</em> for the button text.
+
+![Fontjoy Font Pairing Tool](/assets/images/fontjoyTextSelect1.jpg)
+
+Merriweather Sans is described on the Google fonts site as "a low-contrast semi-condensed sans-serif typeface ... designed to be pleasant to read at very small sizes." It was chosen due to the complementary styling it has with Cabin and the modern contours it possesses.
+
+Cabin is said to incorporate modern proportions , optical adjustments and elements of the geometric sans (Google Fonts). While Google's <em>Noto</em> font families have greater language support, Cabin's language support includes full Latin coverage of Vietnamese, in addition to all Western, Central and South/Eastern European languages.
+
+Quattrocento Sans was chosen for the buttons in order to create an additional visual difference from the main game play area of the game. Designed by Impallari Type who also created Cabin, it is seen as warm, readable and non-intrusive typeface what will be used in it Bold 700 style within the project.
+
+[Back to Contents](#contents)
+
+### Colour Scheme
+Due to the associations of this game with various television franchises, I chose to use strong colours that would have slight comicbook connotations to them. Using [colormind.io](https://colormind.io) and [Adobe Color](https://color.adobe.com/create/color-wheel), I was able to assemble a colour palette that would allow for good contrast and vibrancy. 
+
+<!-- SCREENSHOT color wheel, color accessibility palate and font shades for buttons and headings-->
+
+Due to the desire to visually differientiate the main game play and game exit buttons, an additional colour was added to the palette for easy text readability of the exit button. 
+
+[Back to Contents](#contents)
+  
+<!--Features
  - Home
  - Navigation Bar
  - Introduction
  - Sub-Sections
- - Footer
+ - Footer-->
 
-Future Features to implement-->
+## Future Features to Implement
+  - Greater language support: such a simple game can find itself popular amoung any society who enjoys the concept and activity of the game. With this in mind, the plan will be to introduce further language supporting fonts that will complement the feel of the website. <!--Noto-->
 
 ## Technologies Used
 
