@@ -1,4 +1,9 @@
 /*-- Global style--*/
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
 
 body {
     background-color: #a095ab;
@@ -7,13 +12,14 @@ body {
     font-size: 16px;
     text-align: center;
     letter-spacing: 1.5px;
+    padding-top: 1.5rem;
 }
 
 /* heading section */
-.heading {
-    font-family: "Merriweather Sans", sans-serif;
+#heading {
+    font-family: "Alegreya Sans", "Fira Sans", sans-serif;
     font-size: 3rem;
-    text-align: center;    
+    text-align: center;  
 }
 
 /*  Game field  */
@@ -29,10 +35,15 @@ body {
     max-height: 450px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1%;
 }
 
 .instructions {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.beat-info {
+    font: 600;
     font-size: 1.5rem;
     text-align: center;
 }
@@ -56,6 +67,7 @@ body {
     flex-wrap: wrap;
     align-content: center;
 }
+
 i {
     display: flex;
     flex-direction: row;
@@ -72,14 +84,14 @@ td {
     display: flexbox;
     font-size: 1rem;
     text-align: center;
-    padding: .5rem;
+    padding: .25rem;
 }
 
 th {
     display: flexbox;
     font-size: 1.25rem;
     text-align: center;
-    padding: .5rem;
+    padding: .25rem;
 }
 
 .btn {
@@ -125,17 +137,21 @@ th {
     align-content: center;
 }
 
+.tally {
+    position: relative;
+
+}
+
 .cap-tally, .comp-tally {
     font-size: 1.5rem;
-    padding-top: 1rem;
     text-align: justify;
   
 }
 
 .cap-tally, .comp-tally, .exit {
     display: flex;
-    flex-direction: row;        
-    padding: 1rem;
+    flex-direction: row;
+    padding-top: .5rem;        
 }
 
 
@@ -192,17 +208,15 @@ th {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin: auto;
-        font-size: 4.5rem;
+        font-size: 3rem;
         --fa-animation: fade;
         --fa-animation-duration: 3s;
         --fa-fade-opacity: 0.4;
       }
 
-    span {
-        text-align: center;
-    }
-
+    table {
+        display:flex ;
+    }    
     .btn-rd {
         width: 150px;
         height: 40px;
@@ -222,6 +236,7 @@ th {
         justify-content: space-around;
         align-items: center;
         align-content: center;
+        margin-top: 1rem;
     }
 
     .cap-tally, .comp-tally {

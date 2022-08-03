@@ -1,48 +1,43 @@
-// Constructs the table for rules
- 
-let gameMoves = [
-    {
-        choice: 'rock',
-        beat1: 'scissors',
-        beat2: 'lizard',
-    },
-    {
-        choice: 'scissors',
-        beat1: 'paper',
-        beat2: 'lizard',
-    },
-    {
-        choice: 'paper',
-        beat1: 'rock',
-        beat2: 'spock',
-    },
-    {
-        choice: 'lizard',
-        beat1: 'spock',
-        beat2: 'paper',
-    },
-    {
-        choice: 'spock',
-        beat1: 'scissors',
-        beat2: 'rock',
-    },
-];
+const userScore = 0;
+const computerScore = 0;
 
-function buildTable(){
-  let hTable = document.createElement("table");
-  hTable.id = "game-rules";
- 
-  let tableHtml = `
-    <table>
-        <thead>
-            <tr>
-                <th col span ='5'>BEATS</th>    
-            </tr>
-        </thead>
-        <tbody>
-    </tbody>
-    </table>`;
-
-    let data = buildTable();
-    document.getElementById("game-rules").innerHTML = data;
+let userScore
+/**
+ * runGame() will be listening for the onclick for the icons 
+ *  within the game-choice area to turn on.
+ * it will only need one selection to activate and shouldnt
+ * be affected if user changes selection choice  
+ * this will change the display in the game-area to the game-stage
+ * which will show the results
+ */
+runGame();{
+    let a= 3;
 }
+
+/**
+ * compares the user choice and the computer
+ * generated choice.
+ */
+ checkAnswer();{ 
+    let b= 2;
+ }
+
+ /**
+  * replies with a text line of congrats or hard luck or its a tie
+  * and provides the indicator for the increment on the tally
+  */
+ calculateCorrectAns();{
+    let i= 0;
+ }
+
+ //increments the tally on the captains score card
+incrementCapt();{
+    let j = 1;
+}
+
+//increments the tally on the computers score card
+
+/**
+ * this function lists for an event click on the end game button
+ * once its turned on, the screen will ref
+ */

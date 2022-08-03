@@ -1,64 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--links for external elements-->
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Merriweather+Sans:wght@700&family=Quattrocento+Sans:wght@700&display=swap" rel="stylesheet">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&family=Cabin&family=Quattrocento+Sans:wght@700&display=swap" rel="stylesheet">    
     <script src="https://kit.fontawesome.com/c776b6a1a6.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <title>Rock! Lizard! Spock!</title>
-</head>
-<body>
+  
+  </head>
 
-  <h1 id="heading">
-    Rock! Lizard! Spock!
-  </h1>
+  <body>
+
+    <header> 
+      <h1 id="heading">
+        Rock! Lizard! Spock!
+      </h1>
+    </header>
+
+    <br>
 
     <div class="game-area">
 
       <p class = "instructions">
         Take on the title of Captain and <br>battle the ship's computer for control!
       </p>
-      <p>Click on your choice of icon and engage the computer by pressing the green button.</p>
 
-      <p class="choice-first choice-one">Make Your Choice!</p>
+      <p>
+        Click on your choice of icon and engage the computer by pressing the green button.
+      </p>
+
+      <p class="choice-first choice-one">
+        Make Your Choice!
+      </p>
 
       <div class="game-choice">
-        <span><i class="fa fa-hand-rock-o fa-fade" aria-hidden="true"></i></span>
-        <span><i class="fa fa-hand-paper-o fa-fade" aria-hidden="true"></i></span>
-        <span><i class="fa fa-hand-scissors-o fa-fade" aria-hidden="true"></i></span>
-        <span><i class="fa fa-hand-lizard-o fa-fade" aria-hidden="true"></i></span>
-        <span><i class="fa fa-hand-spock-o fa-fade" aria-hidden="true"></i></span>
+        <table>
+          <thead>
+            <tr>
+              <th id="rk">
+                <i class="fa fa-hand-rock-o fa-fade" aria-hidden="true"></i>
+              </th>
+              <th id="pr">
+                <i class="fa fa-hand-paper-o fa-fade" aria-hidden="true"></i>
+              </th>
+              <th id="ss">
+                <i class="fa fa-hand-scissors-o fa-fade" aria-hidden="true"></i>
+              </th>        
+              <th id="ld">
+                <i class="fa fa-hand-lizard-o fa-fade" aria-hidden="true"></i>
+              </th>
+              <th id="sk">
+                <i class="fa fa-hand-spock-o fa-fade" aria-hidden="true"></i>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                 <td class="beat-info">BEATS</td>
+                 <td class="beat-info">BEATS</td>
+                 <td class="beat-info">BEATS</td>
+                 <td class="beat-info">BEATS</td>
+                 <td class="beat-info">BEATS</td>
+                </tr>
+              </tr>
+              <t class="beats-one">
+                <td class="beat-info">Scissors</td>
+                 <td class="beat-info">Rock</td>
+                 <td class="beat-info">Paper</td>
+                 <td class="beat-info">Spock</td>
+                 <td class="beat-info">Scissors</td>
+              </tr>
+              <tr class="beats-two">
+                <td class="beat-info">Lizard</td>
+                 <td class="beat-info">Spock</td>
+                 <td class="beat-info">Lizard</td>
+                 <td class="beat-info">Paper</td>
+                 <td class="beat-info">Rock</td>
+              </tr>
+          </tbody>
+        </table>
+
       </div>
-<br>
+
+    <br>
+
       <div id="game-rules"></div>
 
-      <div class="picked">
-        <button class="btn btn-grn btn-middle" onclick ="runGame()">Engage Computer!</button>
-      </div>
+        <div class="picked">
+          <button class="btn btn-grn btn-middle" onclick ="">Engage Computer!</button>
+        </div>
 
     </div> 
-
-  <br> 
-      
+ 
     <div class="results-area">
 
-        <div class="cap-tally"> 
-          <span>Captains Tally</span>  
+      <div class="score-board">
+      
+        <div class="tally">
+          <span class="cap-tally">Captains Tally : <span id="cap-total">0</span></span>
         </div>
       
-        <div class="comp-tally">
-          <span>Computers Tally</span> 
+        <div class="tally">
+          <span class="comp-tally">Computers Tally : <span id="comp-total">0</span></span> 
         </div>
 
-        <div class="exit">
-          <button class="btn btn-rd btn-right ">Exit Game?</button>
-        </div>
+      </div>
+
+      <div class="exit">
+        <button class="btn btn-rd btn-right ">Exit Game?</button>
+      </div>
       
     </div>  
     
@@ -66,5 +124,7 @@
     
 
     <script src="assets/js/script.js"></script>
-</body>
+
+  </body>
+
 </html>

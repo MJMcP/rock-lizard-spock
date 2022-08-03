@@ -109,6 +109,13 @@ In the creation of this project I have used the following:
 Deployment
 
 Credits
-  -Content  
+
+### Content
+I used the following sources to help guide my site creation and code manipulation :
+ - [Fontjoy](http://fontjoy.com) to check font combination visuals.
+ - [Google Font](https://fonts.google.com) to create font-family import link.
+ - [freeCodeCamp.org's YouTube tutorial for Rock Paper Scissors Game](https://www.youtube.com/watch?v=jaVNP3nIAv0) for execution ideas of coding combinations as well as styling insights.
+
+
   - Media
 Acknowledgements
