@@ -91,6 +91,12 @@ function draw(captChoice, computerChoice) {
 */
 function rinka(captChoice) {
   console.log("You have selected " + captChoice);
+  let chosen = document.getElementById(captChoice);
+  chosen.classList.add("user-picked");
+  // want to add an event listener to turn off border
+}
+
+function runGame() {  
   let computerChoice = gameCompChoice();
   switch (captChoice + computerChoice) {
     case "rkss":
@@ -170,8 +176,4 @@ main();
  checkAnswer();{ 
     let b= 2;
  }
-
-
- 
-
-
+*/
