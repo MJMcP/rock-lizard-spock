@@ -126,7 +126,6 @@ The site was deployed to Github pages using these steps:
 
 ## Cloning
 
-
 To clone this Github repository, please follow these steps:
   1. Open the target repository and click on the Code button located beside the Gitpod button.
   2. From the drop down menu, select your preferred format (HTTPS/SSH/Github CLI)
@@ -145,6 +144,7 @@ I used the following sources to help guide my site creation and code manipulatio
  - [Fontjoy](http://fontjoy.com) to check font combination visuals.
  - [Google Font](https://fonts.google.com) to create font-family import link.
  - [freeCodeCamp.org's YouTube tutorial for Rock Paper Scissors Game](https://www.youtube.com/watch?v=jaVNP3nIAv0) for execution ideas of coding combinations as well as styling insights.
+  -[W3 Schools resources] https://www.w3schools.com/ for reminders and insights on best HTML, CSS and JS options.
 
 
   - Media
