@@ -53,12 +53,13 @@ body {
     text-align: center;
 }
 
-.game-choice {
+.game-container {
     display: flex;
-    flex-direction: row;
+    grid-template-columns: auto auto auto auto auto;
     justify-content: center;
     margin: auto;
     padding: 10px,0;
+    flex-wrap: wrap;
 }
 
 .game-rules {
@@ -66,6 +67,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    letter-spacing: 0px;
 }
 
 i {
@@ -208,6 +210,16 @@ th {
         flex-wrap: wrap;
         font-size: .5rem;
         letter-spacing: 1.5px;
+    }
+
+
+    .game-container {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        padding: 10px,0;
+        flex-wrap: wrap;
+        align-content: center;
     }
 
     i {  
