@@ -124,6 +124,11 @@ th {
     align-items: baseline;
 }
 
+#declare {
+    position: relative;
+    font-size: 1.5rem;
+}
+
 /*Results Area*/
 .results-area {
     display: flex;
