@@ -33,9 +33,10 @@ function gameCompChoice() {
   let cChoices = ["rk", "pr", "ss", "ld", "sk"];
   let cPick = (Math.floor(Math.random()* 5));
   return cChoices[cPick];
+  console.log(gameCompChoice());
 }
 
-console.log(gameCompChoice());
+
 
 /**
 * 5th created with assistance of freeCodeCamp youtube tutorial - inserts a human 
@@ -103,7 +104,6 @@ function rinka(captChoice) {
     case "skss":
     case "skrk":
       win(captChoice, computerChoice);
-      console.log("YOU PASSED ROUND 1.");
       break;        
     case "rkpr":
     case "rksp":        
@@ -116,7 +116,6 @@ function rinka(captChoice) {
     case "skpr":
     case "skld":
       loss(captChoice, computerChoice);
-      console.log("COMPUTER HAS BLOCKED YOU.");
       break;
     case "rkrk": 
     case "prpr":
@@ -124,7 +123,6 @@ function rinka(captChoice) {
     case "ldld":
     case "sksk":
       draw(captChoice, computerChoice);
-      console.log("STALEMATE - TRY AGAIN");
       break;  
   }
 }
@@ -136,17 +134,17 @@ function rinka(captChoice) {
 function main() {
     rockIcon.addEventListener("click", function() { 
       rinka("rk");
-      console.log(rock);
+      console.log("rock");
     })
   
     papeIcon.addEventListener("click", function( ){
       rinka("pr");
-      console.log(paper);
+      console.log("paper");
     })
   
     scisIcon.addEventListener("click", function(){
       rinka("ss");
-      console.log(scissors);
+      console.log("scissors");
     })
   
     lizaIcon.addEventListener("click", function(){
@@ -156,17 +154,13 @@ function main() {
   
     spocIcon.addEventListener("click", function(){
       rinka("sk");
-      console.log(spock)
+      console.log("spock")
       
     })
    }
   
 main();
   
-  
-
-
-
 
 
 /**
@@ -177,22 +171,7 @@ main();
     let b= 2;
  }
 
- /**
-  * replies with a text line of congrats or hard luck or its a tie
-  * and provides the indicator for the increment on the tally
+
  
- calculateCorrectAns();{
-    let i= 0;
- }
 
- //increments the tally on the captains score card
-incrementCapt();{
-    let j = 1;
-}
 
-//increments the tally on the computers score card
-
-/**
- * this function lists for an event click on the end game button
- * once its turned on, the screen will ref
- */
