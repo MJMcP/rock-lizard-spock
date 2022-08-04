@@ -28,6 +28,7 @@ Photos of the responsive site-->
     - [Validator Testing](#validator-testing)
     - [Unfixed Bugs](#unfixed-bugs)
 - [Deployment](#deployment)
+- [Cloning](#cloning)
 - [Credits](#credits)
   - [Content](#content)
   - [Media](#media)
@@ -105,10 +106,39 @@ In the creation of this project I have used the following:
 
 <!--Testing
   - Validator Testing
-  - Unfixed Bugs
-Deployment
+  - Unfixed Bugs<-->
+## Deployment
 
-Credits
+The site was deployed to Github pages using these steps:
+  1.  Open the relevent repository in my Github account, labelled 'rock-lizard-spock'.
+  <!--Deployment 1-->
+  2.  Navigate to the Github 'Pages' tab via 'Settings > Code and Automation > Pages'.
+  3.  In the divisions now on display in the main body of the screen, opt to leave the drop-down menu choice of 'Deploy from a branch' which is shown in the Source division. There is another method, 'Github Actions' in Beta mode that can be selected but we will opt to stay with the Classic Pages Experience for this project.
+  <!--Deployment 2-->
+  4. In the Branch division beneath Source, choose 'mains' from the Select Branch dropdown menu and '/roots' from the Select Folder dropp-down menu. 
+  5.  Click 'Save' once you have re-confirmed that all your settings are correctly selected.
+
+  Once you have clicked save, you will be brought to an option for custom domains. If you own a purchased web address for the project, this would be included here. For this project, I have opted to host from the Github pages. 
+
+ The live link for the game can be found here -[Rock! Lizard! Spock!](https://mjmcp.github.io/rock-lizard-spock/) 
+
+ [Back to Contents](#contents)
+
+## Cloning
+
+
+To clone this Github repository, please follow these steps:
+  1. Open the target repository and click on the Code button located beside the Gitpod button.
+  2. From the drop down menu, select your preferred format (HTTPS/SSH/Github CLI)
+  3. Once selected, click on the double box symbol beside the address bar to copy your choice's URL
+  4. Open Git Bash.
+  5. Change the current working directory to the location where you want the cloned directory.
+  6. Type the words 'git clone' into the terminal window, and then paste the copied URL.
+  7. Press 'Enter' to complete the process and open the cloned repository.
+
+[Back to Contents](#contents)
+
+<!--##Credits
 
 ### Content
 I used the following sources to help guide my site creation and code manipulation :

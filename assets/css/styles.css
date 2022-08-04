@@ -75,9 +75,10 @@ i {
     margin: auto;
     font-size: 5rem;
     padding: 1rem;
-    animation: fade;
-    animation-duration: 3s;
-    opacity: 0.4;
+    --fa-animation: fade;
+    --fa-animation-duration: 3s;
+    --fa-fade-opacity: 0.4;
+    --fa-animation-iteration-count: 3;
 }
 
 td {
