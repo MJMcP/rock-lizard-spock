@@ -179,10 +179,25 @@ th {
 @media screen and (min-width: 1080px) {
 }
 
-/* Responsive layout - when the screen is 700px wide or larger*/
-@media screen and (min-width: 700px) {
+/* Responsive layout - when the screen is 768px wide or larger*/
+@media screen and (min-width: 768px) {
 }
 
+.results-area {
+    display: inline-flex;
+    flex-direction: row;
+    min-width: 538px;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-top: 1rem;
+}
+
+.scoreboard {
+    display: inline;
+}
 
 /* Responsive layout - when the screen is 320px wide*/
 @media screen and (max-width: 320px) {
