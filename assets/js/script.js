@@ -70,7 +70,7 @@ function loss(captChoice, computerChoice) {
   computerScore++;
   userScoreTotal.innerHTML = userScore;   
   computerScoreTotal.innerHTML = computerScore;
-  scoreBoard.innerHTML = `You chose ${convertToWord(captChoice)}. The computer chose ${convertToWord(computerChoice)}. Computer stalls your progress!`;
+  scoreBoard.innerHTML = `You chose ${convertToWord(captChoice)}. The computer chose ${convertToWord(computerChoice)}. Computer blocks your progress!`;
 }
     
 /**  7th created with the assistance of freeCodeCamp youtube tutorial - creates the block 
