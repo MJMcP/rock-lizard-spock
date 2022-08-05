@@ -2,9 +2,16 @@ let userScore = 0;
 let computerScore = 0;
 let userScoreTotal = document.getElementById("cap-total");
 let computerScoreTotal = document.getElementById("comp-total");
+
 let scoreBoard = document.querySelector(".declare");
 let resultsTally= document.querySelector(".tally > span > span");
 let notice = document.getElementsByClassName("picked");
+
+let rulzBtn = document.getElementById("popup-box");
+let shutBtn = document.querySelector(".shut-btn");
+let gameTxt = document.getElementById("game-text");
+let rulzBook = document.getElementById("games-rules-btn");
+
 const rockIcon = document.getElementById("rk");
 const papeIcon = document.getElementById("pr");
 const scisIcon = document.getElementById("ss");
@@ -23,6 +30,22 @@ const spocIcon = document.getElementById("sk");
  * runGame();{
     let a= 3;
 }*/
+
+/**
+ * Creates two event listeners events centerede around rules button
+ * function.
+ */
+function openRules(event){
+rulesBtn.addEventListener('click', (e) => {
+  rulzBook.style.display = 'block';
+});
+
+shutBtn.addEventListener('click', (e) => {
+  rulzBook.style.display = 'none';
+
+});
+}
+
 
 
 /**
@@ -94,6 +117,7 @@ function rinka(captChoice) {
   let chosen = document.getElementById(captChoice);
   chosen.classList.add("user-picked");
   // want to add an event listener to turn off border
+  chosen.addEventListener("click", )
 }
 
 function runGame() {  
