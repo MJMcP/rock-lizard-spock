@@ -24,6 +24,20 @@ body {
 
 /*  Game field  */
 
+#game-rules-btn {
+    background-color: #a095ab;
+    color: #291d2e;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: 600;
+    width: 220px;
+    height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    box-sizing: block-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .game-area {
     background-color: #291d2e;
     color: #d1fd02;
@@ -36,9 +50,15 @@ body {
     margin-right: auto;
 }
 
+.game-laws {
+    max-width: 380px;
+
+}
+
 .instructions {
     font-size: 1.5rem;
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 .beat-info {
@@ -77,6 +97,14 @@ body {
     letter-spacing: 0px;
 }
 
+.game-text {
+    display: flex;
+    min-width: 80%;
+    padding: 2px, 0;
+    margin: 6px auto;
+    justify-content: flex-end;
+}
+
 i {
     display: flex;
     flex-direction: row;
@@ -104,6 +132,21 @@ th {
     padding: .50rem;
 }
 
+#popup-box {
+    display: inline-block;
+    width: 70%;
+    font-size: .9rem;
+    font-weight: 600;
+    background-color:#d1fd02;
+    color: #291d2e;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: bold;
+    padding: 2px 0;
+    border-radius:  4px;
+    margin: 6px 0;
+}
+
+
 .btn {
     font-family: "Quattrocento Sans", sans-serif;
     font-weight: bold;
@@ -127,6 +170,11 @@ th {
     color: #f9f5f5;
 }
 
+.shut-btn {
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
 .picked {
     display: flex;
     flex-direction: row;
@@ -135,6 +183,7 @@ th {
 }
 
 .declare {
+    display: block;
     position: relative;
     font-size: 1.5rem;
 }
@@ -216,7 +265,7 @@ th {
     }
 
     .instructions {
-        font-size: 1rem;
+        padding-bottom: .5rem;
         text-align: center;
     }
     
@@ -253,6 +302,7 @@ th {
     table {
         display:flex ;
     }    
+
     .btn-rd {
         width: 150px;
         height: 40px;
