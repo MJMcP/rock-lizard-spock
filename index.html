@@ -32,21 +32,40 @@
       <p class = "instructions">
         Take on the title of Captain and <br>battle the ship's computer for control!
       </p>
-
-      <p>
-        Click on your choice of icon and engage the computer by pressing the green button.
-      </p>
-
-      <p class="choice-first choice-one">
+      <div>
+        <button id="games-rules-btn" type="button" aria-label="How to Play" onclick="openRules();">How to Play</button>
+      </div>
+      <div id = "popup-box">
+        <div class="game-text"> 
+          <a class="shut-btn" href="#"> X </a>
+        </div>
+      
+        <p class="game-laws">
+          <em>How to Play</em>
+          <br>
+          <br>Click on your choice of icon - Rock, Paper, Scissors, Lizard or Spock.
+          <br>
+          <br>Engage against the computer by pressing the green button.
+          <br>
+          <br>Beat the computer 3 times to regain control of the ship!
+          <br>
+          <br>To quit before the goal is reached, press the 'Exit Game' button!
+          <br>
+        </p>
+      
+      </div>
+ 
+      <p class="choice-first">
         Make Your Choice!
       </p>
-<!-- grid idea supplied from w3schools.com/css module-->
+
+      <!-- grid idea supplied from w3schools.com/css module-->
       <div class="game-container">
         <div class="game-item">
           <table>
             <tbody>
               <tr>
-                <th id="rk" class="">
+                <th id="rk">
                   <i class="fa fa-hand-rock-o fa-fade" aria-hidden="true"></i>
                 </th>
               </tr>
@@ -153,14 +172,13 @@
       <div id="game-rules"></div>
 
         <div class="picked">
-          <button class="btn btn-grn btn-middle" onclick ="">Engage Computer!</button>
+          <button class="btn btn-grn btn-middle" type="button" onclick="runGame()">Engage Computer!</button>
         </div>
 
+      <p class="declare"></p>  
+  
     </div> 
- 
-    <p class="declare"></p>
-    
-    
+   
     <br>
 
     <div class="results-area">
