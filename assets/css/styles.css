@@ -24,16 +24,16 @@ body {
 
 /*  Game field  */
 
-#game-rules-btn {
+.game-rules-btn {
     background-color: #a095ab;
     color: #291d2e;
     font-family: "Quattrocento Sans", sans-serif;
     font-weight: 600;
     width: 220px;
     height: 60px;
+    font-size: large;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    box-sizing: block-box;
     margin-left: auto;
     margin-right: auto;
 }
