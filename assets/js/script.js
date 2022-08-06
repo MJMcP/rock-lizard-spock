@@ -37,11 +37,11 @@ const spocIcon = document.getElementById("sk");
  */
 function openRules(event){
 rulesBtn.addEventListener('click', (e) => {
-  rulzBook.style.display = 'block';
+  rulzBook.style.display = 'none';
 });
 
 shutBtn.addEventListener('click', (e) => {
-  rulzBook.style.display = 'none';
+  rulzBook.style.display = 'display';
 
 });
 }
