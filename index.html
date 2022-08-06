@@ -33,9 +33,13 @@
         Take on the title of Captain and <br>battle the ship's computer for control!
       </p>
       <div>
-        <button id="games-rules-btn" type="button" aria-label="How to Play" onclick="openRules();">How to Play</button>
+        <button type="button" class="game-rules-btn" aria-label="How to Play" onclick="alert(`How to Play:
+        Click on your choice of icon - Rock, Paper, Scissors, Lizard or Spock.
+        Engage against the computer by pressing the green button.
+        Beat the computer 3 times to regain control of the ship!
+        To quit before the goal is reached, press the 'Exit Game' button!`)">How to Play</button>
       </div>
-      <div id = "popup-box">
+      <!--div id = "popup-box">
         <div class="game-text"> 
           <a class="shut-btn" href="#"> X </a>
         </div>
@@ -53,7 +57,7 @@
           <br>
         </p>
       
-      </div>
+      </div-->
  
       <p class="choice-first">
         Make Your Choice!
@@ -167,15 +171,14 @@
         </div>	
       </div> 
 
+      <p class="declare"></p>  
     <br>
 
-      <div id="game-rules"></div>
-
         <div class="picked">
-          <button class="btn btn-grn btn-middle" type="button" onclick="runGame()">Engage Computer!</button>
+          <button class="btn btn-grn" type="button" onclick="runGame()">Engage Computer!</button>
         </div>
 
-      <p class="declare"></p>  
+     
   
     </div> 
    
