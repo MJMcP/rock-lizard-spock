@@ -5,46 +5,14 @@ let computerScoreTotal = document.getElementById("comp-total");
 
 let scoreBoard = document.querySelector(".declare");
 let resultsTally= document.querySelector(".tally > span > span");
-let notice = document.getElementsByClassName("picked");
 
-let rulzBtn = document.getElementById("popup-box");
-let shutBtn = document.querySelector(".shut-btn");
-let gameTxt = document.getElementById("game-text");
-let rulzBook = document.getElementById("games-rules-btn");
+let play = document.querySelector(".picked");
 
 const rockIcon = document.getElementById("rk");
 const papeIcon = document.getElementById("pr");
 const scisIcon = document.getElementById("ss");
 const lizaIcon = document.getElementById("ld");
 const spocIcon = document.getElementById("sk");
-
-/**
- * runGame() will be listening for the onclick for the icons 
- *  within the game-choice area to turn on.
- * it will only need one selection to activate and shouldnt
- * be affected if user changes selection choice  
- * this will change the display in the game-area to the game-stage
- * which will show the results
- * 
- * 
- * runGame();{
-    let a= 3;
-}*/
-
-/**
- * Creates two event listeners events centerede around rules button
- * function.
- */
-function openRules(event){
-rulesBtn.addEventListener('click', (e) => {
-  rulzBook.style.display = 'none';
-});
-
-shutBtn.addEventListener('click', (e) => {
-  rulzBook.style.display = 'display';
-
-});
-}
 
 
 
@@ -80,7 +48,7 @@ function convertToWord(string) {
 * 4th created with assistance of freeCodeCamp youtube tutorial- creates the block 
 * code for the win scenario  
 */
-function win(captChoice, computerChoice) {
+function win(captChoice, computerChoice) { 
   userScore++;
   userScoreTotal.innerHTML = userScore;      
   computerScoreTotal.innerHTML = computerScore;
@@ -114,13 +82,6 @@ function draw(captChoice, computerChoice) {
 */
 function rinka(captChoice) {
   console.log("You have selected " + captChoice);
-  let chosen = document.getElementById(captChoice);
-  chosen.classList.add("user-picked");
-  // want to add an event listener to turn off border
-  chosen.addEventListener("click", )
-}
-
-function runGame() {  
   let computerChoice = gameCompChoice();
   switch (captChoice + computerChoice) {
     case "rkss":
@@ -154,7 +115,9 @@ function runGame() {
     case "sksk":
       draw(captChoice, computerChoice);
       break;  
-  }
+  };
+  let chosen = document.classList.add("user-picked");
+  chosen.addEventListener("click", runGame());
 }
 
 /**
