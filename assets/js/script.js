@@ -78,7 +78,7 @@ function draw(captChoice, computerChoice) {
 * 2nd created with the assistance of freeCodeCamp youtube tutorial - Begins by logging 
 * the selection to the console. . 
 */
-function rinka(captChoice) {
+function choice(captChoice) {
 
   console.log("You have selected " + captChoice);
     let computerChoice = gameCompChoice();
@@ -116,10 +116,10 @@ function rinka(captChoice) {
       case "sksk":
         draw(captChoice, computerChoice);
         break;  
-    };
+    }
 
   let chosen = document.classList.add("user-picked");
-  /*chosen.addEventListener("click", runGame());*/
+  chosen.addEventListener("click", runGame());
 }
 
 /**
@@ -128,27 +128,27 @@ function rinka(captChoice) {
 */
 function main() {
     rockIcon.addEventListener("click", function() { 
-      rinka("rk");
+      choice("rk");
       console.log("rock");
     })
   
     papeIcon.addEventListener("click", function( ){
-      rinka("pr");
+      choice("pr");
       console.log("paper");
     })
   
     scisIcon.addEventListener("click", function(){
-      rinka("ss");
+      choice("ss");
       console.log("scissors");
     })
   
     lizaIcon.addEventListener("click", function(){
-      rinka("ld");
+      choice("ld");
       console.log("lizard");
     })
   
     spocIcon.addEventListener("click", function(){
-      rinka("sk");
+      choice("sk");
       console.log("spock")
       
     })
