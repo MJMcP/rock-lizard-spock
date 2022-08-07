@@ -106,7 +106,12 @@ In the creation of this project I have used the following:
 
 <!--Testing
   - Validator Testing
+  HTML validation coming back no errors after first run (still had 3 bugs to deal with at this time). the first run of the CSS validator reveals 5 simple syntax errors that were quickly resolved. (again the 3 bugs hadn;t been resolved when this was run)
   - Unfixed Bugs<-->
+  Issue with the selected border failing to appear
+  Issue with the selected border failing to disappear on secondary choice selection 
+  Issue with the engage button not activating onclick
+  issue with the user and computer score tallys not concluding the loop of the game
 ## Deployment
 
 The site was deployed to Github pages using these steps:
