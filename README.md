@@ -76,7 +76,7 @@ Due to the associations of this game with various television franchises, I chose
 
 <!-- SCREENSHOT color wheel, color accessibility palate and font shades for buttons and headings-->
 
-Due to the desire to visually differientiate the main game play and game exit buttons, an additional colour was added to the palette for easy text readability of the exit button. 
+Due to the desire to enhance the appearance of the game's function buttons ('How to Play', 'Engage Computer' and 'End Game'), an additional colour was added as a contrast for a shadow effect.
 
 [Back to Contents](#contents)
   
@@ -144,8 +144,11 @@ I used the following sources to help guide my site creation and code manipulatio
  - [Fontjoy](http://fontjoy.com) to check font combination visuals.
  - [Google Font](https://fonts.google.com) to create font-family import link.
  - [freeCodeCamp.org's YouTube tutorial for Rock Paper Scissors Game](https://www.youtube.com/watch?v=jaVNP3nIAv0) for execution ideas of coding combinations as well as styling insights.
-  -[W3 Schools resources] https://www.w3schools.com/ for reminders and insights on best HTML, CSS and JS options.
+  -[W3 Schools resources] (https://www.w3schools.com/) for reminders and insights on best HTML, CSS and JS options.
+  - [Veronica Lourens Rock Paper Scissors Game] (https://veronicalourens.github.io/rock-paper-scissors/index.html) This was one example that was recommended to me as a complete and functional game which I used as a basis for troubleshooting when stalled on my own coding efforts. 
 
 
   - Media
 Acknowledgements
+
+Many thanks to Precious Ijege for his feedback on this assignment, once again to the various sources of coding and styling that I resourced from and listed within the credits section. 
