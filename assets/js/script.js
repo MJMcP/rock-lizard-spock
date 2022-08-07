@@ -73,8 +73,6 @@ window.location.reload();
 * the selection to the console. . 
 */
 function choice(captChoice) {
-
-  console.log("You have selected " + captChoice);
     let computerChoice = gameCompChoice();
     switch (captChoice + computerChoice) {
       case "rkss":
@@ -114,6 +112,7 @@ function choice(captChoice) {
 
   let chosen = document.classList.add("user-picked");
   chosen.addEventListener("click", runGame());
+  console.log("You have selected " + captChoice);
 }
 
 
