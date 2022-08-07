@@ -115,6 +115,26 @@ function choice(captChoice) {
   console.log("You have selected " + captChoice);
 }
 
+function finalStatement(){
+  
+  let engageBtn = document.getElementById("engage")
+  
+  if ( userScore === 3 ) {
+
+    engageBtn.classList.add = "hidden";
+    resultText.classList.add = "hidden";
+    plays.innerHTML = `Congratulations, you have regained control of the ship. Time to Boldly Go...`;
+
+  }
+
+  if (computerScore === 3) {
+
+    engageBtn.style.display = "none";
+    resultText.innerHTML = "";
+    plays.innerHTML = `Computer has activated self-destruct sequence. Detonation in 5....4...3`;
+  };
+} 
+  
 
 /**
 * 3rd created with assistance of freeCodeCamp youtube tutorial- creates the random 
