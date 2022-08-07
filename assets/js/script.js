@@ -3,10 +3,11 @@ let computerScore = 0;
 let userScoreTotal = document.getElementById("cap-total");
 let computerScoreTotal = document.getElementById("comp-total");
 
-let scoreBoard = document.querySelector(".declare");
+let resultText = document.querySelector(".declare");
 let resultsTally= document.querySelector(".tally > span > span");
 
 let play = document.querySelector(".picked");
+const exitBtn = document.getElementById('btn-leave');
 
 const rockIcon = document.getElementById("rk");
 const papeIcon = document.getElementById("pr");
@@ -52,7 +53,7 @@ function win(captChoice, computerChoice) {
   userScore++;
   userScoreTotal.innerHTML = userScore;      
   computerScoreTotal.innerHTML = computerScore;
-  scoreBoard.innerHTML = `You chose ${convertToWord(captChoice)}. That beats ${convertToWord(computerChoice)}. Proceed to next round!`;
+  resultText.innerHTML = `You chose ${convertToWord(captChoice)}. That beats the computer's ${convertToWord(computerChoice)}. Proceed to next round!`;
 }
   
 /**  6th created with assistance of freeCodeCamp youtube tutorial - creates the block 
@@ -62,62 +63,63 @@ function loss(captChoice, computerChoice) {
   computerScore++;
   userScoreTotal.innerHTML = userScore;   
   computerScoreTotal.innerHTML = computerScore;
-  scoreBoard.innerHTML = `You chose ${convertToWord(captChoice)}. The computer chose ${convertToWord(computerChoice)}. Computer blocks your progress!`;
+  resultText.innerHTML = `You chose ${convertToWord(captChoice)}. The computer chose ${convertToWord(computerChoice)}. Computer blocks your progress!`;
 }
     
 /**  7th created with the assistance of freeCodeCamp youtube tutorial - creates the block 
 * code for the draw scenario 
 */
 function draw(captChoice, computerChoice) {
-  scoreBoard.innerHTML = `You chose ${convertToWord(captChoice)}. The computer chose ${convertToWord(computerChoice)}. Stalemate - you have another go!`;
+  resultText.innerHTML = `You chose ${convertToWord(captChoice)}. The computer chose ${convertToWord(computerChoice)}. Stalemate - you have another go!`;
 }
 
   
 /**
 * 2nd created with the assistance of freeCodeCamp youtube tutorial - Begins by logging 
-* the selection to the console. If the "captChoice + computerChoice" create a string 
-* with a certain letter combination from first section of block code, 
-* the user will be allowed to win the round. If the string combinatrion is from 
-* the second section of block code, the computer will be allowed to win the round. 
+* the selection to the console. . 
 */
 function rinka(captChoice) {
+
   console.log("You have selected " + captChoice);
-  let computerChoice = gameCompChoice();
-  switch (captChoice + computerChoice) {
-    case "rkss":
-    case "rkld":
-    case "prrk":
-    case "prsk":
-    case "sspr":
-    case "ssld":
-    case "ldsk":
-    case "ldpr":
-    case "skss":
-    case "skrk":
-      win(captChoice, computerChoice);
-      break;        
-    case "rkpr":
-    case "rksp":        
-    case "prss":
-    case "prld":
-    case "ssrk":
-    case "sssp":
-    case "ldrk":
-    case "ldss":
-    case "skpr":
-    case "skld":
-      loss(captChoice, computerChoice);
-      break;
-    case "rkrk": 
-    case "prpr":
-    case "ssss":
-    case "ldld":
-    case "sksk":
-      draw(captChoice, computerChoice);
-      break;  
-  };
+    let computerChoice = gameCompChoice();
+    switch (captChoice + computerChoice) {
+      case "rkss":
+      case "rkld":
+      case "prrk":
+      case "prsk":
+      case "sspr":
+      case "ssld":
+      case "ldsk":
+      case "ldpr":
+      case "skss":
+      case "skrk":
+        win(captChoice, computerChoice);
+        break;        
+    
+      case "rkpr":
+      case "rksp":        
+      case "prss":
+      case "prld":
+      case "ssrk":
+      case "sssp":
+      case "ldrk":
+      case "ldss":
+      case "skpr":
+      case "skld":
+        loss(captChoice, computerChoice);
+        break;
+
+      case "rkrk": 
+      case "prpr":
+      case "ssss":
+      case "ldld":
+      case "sksk":
+        draw(captChoice, computerChoice);
+        break;  
+    };
+
   let chosen = document.classList.add("user-picked");
-  chosen.addEventListener("click", runGame());
+  /*chosen.addEventListener("click", runGame());*/
 }
 
 /**
@@ -157,10 +159,18 @@ main();
 
 
 /**
- * compares the user choice and the computer
- * generated choice.
- 
- checkAnswer();{ 
-    let b= 2;
- }
+ * creates the reload function on the exit button
+ * inspired from Veronica Louren example.
 */
+
+exitBtn.addEventListener('click', (e) => {
+
+  userScoreTotal.innerText = 0;
+  computerScoreTotal.innerText = 0;
+  resultText.innerHtml = "";
+
+  // ensures settings returned to start settings.
+
+  window.location.reload();
+
+});
