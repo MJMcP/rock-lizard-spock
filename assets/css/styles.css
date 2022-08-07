@@ -15,6 +15,10 @@ body {
     padding-top: 1.5rem;
 }
 
+.hidden {
+    display: none;
+}
+
 /* heading section */
 #heading {
     font-family: "Alegreya Sans", "Fira Sans", sans-serif;
@@ -181,12 +185,15 @@ th {
 }
 
 .declare {
-    display: block;
+    display: inline-block;
     position: relative;
     font-size: 1.5rem;
+    max-width: 538px;
+    align-content: center;
 }
 
-/*Results Area*/
+/* Result Board  Area*/
+
 .results-area {
     display: flex;
     min-width: 830px;
@@ -206,8 +213,7 @@ th {
 
 .cap-tally, .comp-tally {
     font-size: 1.5rem;
-    text-align: justify;
-  
+    text-align: justify;  
 }
 
 .cap-tally, .comp-tally, .exit {
