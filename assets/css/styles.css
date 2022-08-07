@@ -24,20 +24,6 @@ body {
 
 /*  Game field  */
 
-.game-rules-btn {
-    background-color: #a095ab;
-    color: #291d2e;
-    font-family: "Quattrocento Sans", sans-serif;
-    font-weight: 600;
-    width: 220px;
-    height: 60px;
-    font-size: large;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .game-area {
     background-color: #291d2e;
     color: #d1fd02;
@@ -132,48 +118,58 @@ th {
     padding: .50rem;
 }
 
-#popup-box {
-    display: inline-block;
-    width: 70%;
-    font-size: .9rem;
-    font-weight: 600;
-    background-color:#d1fd02;
-    color: #291d2e;
-    font-family: "Quattrocento Sans", sans-serif;
-    font-weight: bold;
-    padding: 2px 0;
-    border-radius:  4px;
-    margin: 6px 0;
-}
-
-
+/* button style section*/
 .btn {
-    font-family: "Quattrocento Sans", sans-serif;
-    font-weight: bold;
-}
-
-.btn-rd {
     width: 220px;
     height: 60px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 2px;
+    cursor: pointer;     
+}
+
+#btn-leave {
     background-color: #e33e33;
     color: #f9f5f5;
+    font-size: large;
+    box-shadow: 2px 2px 2px 2px #291d2e;
+    display: none;
 }
+
+#btn-leave:hover {
+    background-color:#d1fd02;
+    color:#291d2e
+    }
 
 .btn-grn {
-    width: 220px;
-    height: 60px;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
     background-color: #65a76b;
     color: #f9f5f5;
+    font-size: large;
+    box-shadow: 2px 2px 2px 2px #686d50;
+  
 }
 
-.shut-btn {
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
+.btn-grn:hover {
+    background-color:#d1fd02;
+    color:#291d2e
+    }
+
+.game-rules-btn {
+    background-color: #a095ab;
+    color: #291d2e;
+    font-weight: bold;
+    font-size: large;
+    box-shadow: 2px 2px 2px 2px #686d50;
 }
+
+.game-rules-btn:hover {
+    background-color:#d1fd02;
+    color:#291d2e
+    }
 
 .picked {
     display: flex;
@@ -303,15 +299,11 @@ th {
         display:flex ;
     }    
 
-    .btn-rd {
+    .btn-rd, .btn-grn, #btn-leave {
         width: 150px;
         height: 40px;
     }
     
-    .btn-grn {
-        width: 150px;
-        height: 40px;
-    }
     
     .results-area {
         display: inline-flex;
