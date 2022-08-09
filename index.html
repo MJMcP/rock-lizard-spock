@@ -1,75 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!--links for external elements-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rock Paper Scissors Lizard Spock game">
+  <meta name=" keywords" content="rock, paper, scissors, lizard, spock, game, trek, bbt,">
    
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&family=Cabin&family=Quattrocento+Sans:wght@700&display=swap" rel="stylesheet">    
-    <script src="https://kit.fontawesome.com/c776b6a1a6.js" crossorigin="anonymous"></script>
+  <!-- links for external elements-->
 
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&family=Cabin&family=Quattrocento+Sans:wght@700&display=swap" rel="stylesheet">    
+  <script src="https://kit.fontawesome.com/c776b6a1a6.js" crossorigin="anonymous"></script>
 
-    <title>Rock! Lizard! Spock!</title>
-  
-  </head>
+  <link rel="stylesheet" href="assets/css/styles.css">
 
-  <body>
+  <title>Rock! Lizard! Spock!</title>
 
-    <header> 
-      <h1 id="heading">
-        Rock! Lizard! Spock!
-      </h1>
-    </header>
+</head>
+<body>
 
-    <br>
+  <h1 id="heading">
+    Rock! Lizard! Spock!
+  </h1>
 
-    <div class="game-area">
+  <br>
 
-      <p class = "instructions">
-        Take on the title of Captain and battle the ship's computer for control!
-      </p>
-      <div>
-        <button type="button" class=" btn game-rules-btn" aria-label="How to Play" onclick="alert(`How to Play:
-        Click on your choice of icon -  Rock, Paper, Scissors, Lizard or Spock.
-        Engage against the computer by pressing the green button.
-        The first to win THREE ROUNDS wins control of the ship!
-        To reset the game before the goal is reached, press the 'Reset Game' button!`)">How to Play</button>
-      </div>
+  <!-- game setting and rules for game play-->
+  <div class="game-area">
+
+  <p class = "instructions">
+    Take on the title of Captain and battle the ship's computer for control!
+  </p>
+
+  <div>
+    <button type="button" class=" btn game-rules-btn" aria-label="How to Play" onclick="alert(`How to Play:
+      Click on your choice of icon -  Rock, Paper, Scissors, Lizard or Spock.
+      Engage against the computer by pressing the green button.        
+      The first to win THREE ROUNDS wins control of the ship!
+      To reset the game before the goal is reached, press the 'Reset Game' button!`)">How to Play</button>
+  </div>
       
-      <br>
+  <br>
  
-      <p class="choice-first">
-        Make Your Choice!
-      </p>
+  <p class="choice-first">
+    Make Your Choice    
+  </p>
 
-      <!-- grid idea supplied from w3schools.com/css module-->
-      <div class="game-container">
-        <div class="game-item">
-          <table>
-            <tbody>
-              <tr>
-                <th id="rk">
-                  <i class="fa fa-hand-rock-o fa-fade" aria-hidden="true"></i>
-                </th>
-              </tr>
-              <tr>
-                <td class="beat-info">BEATS</td>
-              </tr>
-              <tr class="beats-one">
-                <td class="beat-info">Scissors</td>
-              </tr>
-              <tr class="beats-two">
-                <td class="beat-info">Lizard</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+<!-- grid idea supplied from w3schools.com/css module-->      
+  <div class="game-container">
+    
+    <div class="game-item">
+      <table>
+        <tbody>
+    
+          <tr>
+            <th id="rk">
+              <i class="fa fa-hand-rock-o fa-fade" aria-hidden="true"></i>
+            </th>
+          </tr>
+    
+          <tr>
+            <td class="beat-info">BEATS</td>
+          </tr>
+    
+          <tr class="beats-one">
+            <td class="beat-info">Scissors</td>
+          </tr>
+    
+          <tr class="beats-two">
+            <td class="beat-info">Lizard</td>
+          </tr>
+    
+        </tbody>
+    
+      </table>
+    
+    </div>
   
-        <div class="game-item">
+    <div class="game-item">
           <table>
             <tbody>
               <tr>
@@ -88,9 +97,9 @@
               </tr>
             </tbody>
           </table>
-        </div>
-  
-        <div class="game-item">
+    </div>        
+    
+    <div class="game-item">
           <table>
             <tbody>
               <tr>
@@ -109,9 +118,9 @@
               </tr>
             </tbody>
           </table>
-        </div>
+    </div>
   
-        <div class="game-item">
+    <div class="game-item">
           <table>
             <tbody>
               <tr>
@@ -130,71 +139,74 @@
               </tr>
             </tbody>
           </table>
-        </div>
+    </div>
   
-        <div class="game-item">
-          <table>
-            <tbody>
-              <tr>
-                <th id="sk">
-                  <i class="fa fa-hand-spock-o fa-fade" aria-hidden="true"></i>
-                </th>
-              </tr>
-              <tr>
-               <td class="beat-info">BEATS</td>
-              </tr>
-              <tr class="beats-one">
-                <td class="beat-info">Scissors</td>
-              </tr>
-              <tr class="beats-two">
-                <td class="beat-info">Rock</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>	
-      </div> 
+    <div class="game-item">
+      <table>
+        <tbody>
+          <tr>
+            <th id="sk">
+              <i class="fa fa-hand-spock-o fa-fade" aria-hidden="true"></i>
+            </th>
+          </tr>
+          <tr>
+            <td class="beat-info">BEATS</td>
+          </tr>
+          <tr class="beats-one">
+            <td class="beat-info">Scissors</td>
+          </tr>
+          <tr class="beats-two">
+            <td class="beat-info">Rock</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>	
+  </div> 
 
-      <br> 
+  <br> 
 
-      <div class="declare"></div>  
+  <!-- text confirmation of the user choice and the computer's generated choice-->
+  <div class="declare">    
+  </div>
 
-    <br>
+  <div class = "statment">
+  </div>
 
-        <div class="picked" >
+  <!-- area for play button-->
+  <div class="picked">
 
-          <button class="btn btn-grn" id="engage" type="button">Engage Computer!</button>
+    <button class="btn btn-grn" id="engage" type="button">Engage Computer!</button>
         
-        </div>
+  </div>
 
-     <br>
+  <br>
   
-    </div> 
-   
-    <br>
+  </div> 
 
-    <div class="results-area">
+<!-- section for score tally and reset button-->
 
-      <div class="score-board">
+  <div class="results-area">
+
+    <div class="score-board">
       
-        <div class="tally">
-          <span class="cap-tally">Captains Tally : <span id="cap-total">0</span></span>
-        </div>
-      
-        <div class="tally">
-          <span class="comp-tally">Computers Tally : <span id="comp-total">0</span></span> 
-        </div>
-
-      </div>
-
-      <div class="exit-button">
-        <button class="btn btn-rd" id="btn-leave" type="button" value="restart" aria-label="Exit Game" style="display: block;">Reset Game?</button>
+      <div class="tally">
+        <span class="cap-tally">Captains Tally : <span id="cap-total">0</span></span>
       </div>
       
-    </div>  
+      <div class="tally">
+        <span class="comp-tally">Computers Tally : <span id="comp-total">0</span></span> 
+      </div>
+
+    </div>
+
+    <div class="exit-button">
+      <button class="btn btn-rd" id="btn-leave" type="button" value="restart" aria-label="Exit Game" style="display: block;">Reset Game?</button>
+      </div>
+      
+  </div>  
     
-
-    <script src="assets/js/script.js"></script>
-
-  </body>
+<script src="assets/js/script.js"></script>
+  
+</body>
 
 </html>
