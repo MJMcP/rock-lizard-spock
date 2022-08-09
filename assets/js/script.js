@@ -6,8 +6,9 @@ let computerScoreTotal = document.getElementById("comp-total");
 let resultText = document.querySelector(".declare");
 let resultsTally= document.querySelector(".tally > span > span");
 
-let plays = document.querySelector(".picked");
-const exitBtn = document.getElementById('btn-leave');
+//let plays = document.querySelectorAll("i.game-item"); //will select only first icon not others
+const exitBtn = document.getElementById("btn-leave");
+const engageBtn = document.getElementById("engage");
 
 const rockIcon = document.getElementById("rk");
 const papeIcon = document.getElementById("pr");
@@ -21,27 +22,27 @@ const spocIcon = document.getElementById("sk");
 * listener event to icons and console logs.
 */
 function main() {
-  rockIcon.addEventListener("click", function() { 
+  rockIcon.addEventListener("click", (_e) => { 
     choice("rk");
     console.log("rock");
   })
 
-  papeIcon.addEventListener("click", function( ){
+  papeIcon.addEventListener("click", (_e) => {
     choice("pr");
     console.log("paper");
   })
 
-  scisIcon.addEventListener("click", function(){
+  scisIcon.addEventListener("click", (_e) => {
     choice("ss");
     console.log("scissors");
   })
 
-  lizaIcon.addEventListener("click", function(){
+  lizaIcon.addEventListener("click", (_e) => {
     choice("ld");
     console.log("lizard");
   })
 
-  spocIcon.addEventListener("click", function(){
+  spocIcon.addEventListener("click", (_e) => {
     choice("sk");
     console.log("spock")
     
@@ -72,7 +73,7 @@ window.location.reload();
 * 2nd created with the assistance of freeCodeCamp youtube tutorial - Begins by logging 
 * the selection to the console. . 
 */
-function choice(captChoice) {
+function choices(captChoice) {
     let computerChoice = gameCompChoice();
     switch (captChoice + computerChoice) {
       case "rkss":
@@ -110,28 +111,32 @@ function choice(captChoice) {
         break;  
     }
 
-  let chosen = document.classList.add("user-picked");
+  let chosen = plays.classList.add("user-picked");
   chosen.addEventListener("click", runGame());
   console.log("You have selected " + captChoice);
 }
 
-function finalStatement(){
+function runGame() {
+   engageBtn.addEventListener("click", main()); 
   
-  let engageBtn = document.getElementById("engage")
-  
-  if ( userScore === 3 ) {
+}
 
-    engageBtn.classList.add = "hidden";
-    resultText.classList.add = "hidden";
-    plays.innerHTML = `Congratulations, you have regained control of the ship. Time to Boldly Go...`;
+
+
+function finalStatement(){
+   
+  if ( userScore === 3 ) {
+      
+
+    chosen.innerHTML = `Congratulations, you have regained control of the ship. Time to Boldly Go...`;
 
   }
 
   if (computerScore === 3) {
 
-    engageBtn.style.display = "none";
-    resultText.innerHTML = "";
-    plays.innerHTML = `Computer has activated self-destruct sequence. Detonation in 5....4...3`;
+    engageBtn.setAttribute = "class , hidden";
+    resultText.setAttribute = "class ,hidden";
+    chosen.innerHTML = `Computer has activated self-destruct sequence. Detonation in 5....4...3`;
   };
 } 
   
