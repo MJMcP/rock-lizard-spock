@@ -218,7 +218,17 @@ th {
 /* Responsive layout - when the screen is 1080px wide or larger*/
 @media screen and (min-width: 1080px) {
 }
-
+.results-area {
+    display: inline-flex;
+    flex-direction: row;
+    min-width: 538px;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-top: 1rem;
+}
 /* Responsive layout - when the screen is 768px wide or larger*/
 @media screen and (min-width: 768px) {
 }
@@ -226,7 +236,7 @@ th {
 .results-area {
     display: inline-flex;
     flex-direction: row;
-    min-width: 538px;
+    min-width: 300px;
     margin: 0;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -242,8 +252,8 @@ th {
 /* Responsive layout - when the screen is 320px wide*/
 @media screen and (max-width: 320px) {
 
-    .heading {
-        font-size: 2.5rem;
+    #heading {
+        font-size: 2rem;
         text-align: center;
     }
 
@@ -258,21 +268,22 @@ th {
     .instructions {
         padding-bottom: .5rem;
         text-align: center;
+        font-size: .95rem;
     }
     
     .choice-first {
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-align: center;
     }
   
     .game-item {
-        width: 80px;
-        margin: 6px;
+        width: 50px;
+        margin: 3px;
         display: flex;
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
-        font-size: .5rem;
+        font-size: .35rem;
         letter-spacing: 1.5px;
     }
 
@@ -280,9 +291,15 @@ th {
         display: flex;
         flex-direction: row;
         margin: auto;
-        padding: 10px 0;
+        padding: 0;
         flex-wrap: wrap;
         align-content: center;
+    }
+
+    .beat-info {
+        font: 500;
+        font-size: .8rem;
+        text-align: center;
     }
 
     i {  
@@ -296,9 +313,10 @@ th {
         display:flex ;
     }    
 
-    .btn-rd, .btn-grn, #btn-leave {
-        width: 150px;
-        height: 40px;
+    .btn-rd, .btn-grn, #btn-leave, .btn {
+        width: 120px;
+        height: 30px;
+        font-size: smaller
     }
     
     
@@ -316,7 +334,7 @@ th {
 
     .cap-tally, .comp-tally {
         font-size: 1.5rem;
-        padding-top: 1rem;
+        margin-bottom: 1rem;
         text-align: justify;
         margin-left: 0;
     }
@@ -325,7 +343,11 @@ th {
         display: flex;
         flex-direction: row;        
     }
-    
+
+    .cap-tally, .comp-tally, .exit {
+        padding-top: 0;
+    }
+
     .exit {
         margin-left:0;
     }
