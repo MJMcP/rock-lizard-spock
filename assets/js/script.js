@@ -4,9 +4,10 @@ let userScoreTotal = document.getElementById("cap-total");
 let computerScoreTotal = document.getElementById("comp-total");
 
 let resultText = document.querySelector(".declare");
+let endResult = document.querySelector(".statement");
 let resultsTally= document.querySelector(".tally > span > span");
 
-//let plays = document.querySelectorAll("i.game-item"); //will select only first icon not others
+let plays = document.getElementsByTagName("th"); //will select only first icon not others
 const exitBtn = document.getElementById("btn-leave");
 const engageBtn = document.getElementById("engage");
 
@@ -16,64 +17,11 @@ const scisIcon = document.getElementById("ss");
 const lizaIcon = document.getElementById("ld");
 const spocIcon = document.getElementById("sk");
 
-
-/**
-* 1st created with the assistance of freeCodeCamp youtube tutorial - adds 
-* listener event to icons and console logs.
-*/
-function main() {
-  rockIcon.addEventListener("click", (_e) => { 
-    choice("rk");
-    console.log("rock");
-  })
-
-  papeIcon.addEventListener("click", (_e) => {
-    choice("pr");
-    console.log("paper");
-  })
-
-  scisIcon.addEventListener("click", (_e) => {
-    choice("ss");
-    console.log("scissors");
-  })
-
-  lizaIcon.addEventListener("click", (_e) => {
-    choice("ld");
-    console.log("lizard");
-  })
-
-  spocIcon.addEventListener("click", (_e) => {
-    choice("sk");
-    console.log("spock")
-    
-  })
- }
-
-main();
-
-/**
-* creates the reload function on the exit button
-* inspired from Veronica Louren example.
-*/
-
-exitBtn.addEventListener('click', (_e) => {
-
-userScoreTotal.innerText = 0;
-computerScoreTotal.innerText = 0;
-resultText.innerHtml = "";
-
-// ensures settings returned to start settings.
-
-window.location.reload();
-
-});
-
-
 /**
 * 2nd created with the assistance of freeCodeCamp youtube tutorial - Begins by logging 
 * the selection to the console. . 
 */
-function choices(captChoice) {
+function choice(captChoice) {
     let computerChoice = gameCompChoice();
     switch (captChoice + computerChoice) {
       case "rkss":
@@ -110,35 +58,7 @@ function choices(captChoice) {
         draw(captChoice, computerChoice);
         break;  
     }
-
-  let chosen = plays.classList.add("user-picked");
-  chosen.addEventListener("click", runGame());
-  console.log("You have selected " + captChoice);
 }
-
-function runGame() {
-   engageBtn.addEventListener("click", main()); 
-  
-}
-
-
-
-function finalStatement(){
-   
-  if ( userScore === 3 ) {
-      
-
-    chosen.innerHTML = `Congratulations, you have regained control of the ship. Time to Boldly Go...`;
-
-  }
-
-  if (computerScore === 3) {
-
-    engageBtn.setAttribute = "class , hidden";
-    resultText.setAttribute = "class ,hidden";
-    chosen.innerHTML = `Computer has activated self-destruct sequence. Detonation in 5....4...3`;
-  };
-} 
   
 
 /**
@@ -200,3 +120,44 @@ function endGame(resultsTally){
   }
   }
 
+
+
+
+  /**
+* 1st created with the assistance of freeCodeCamp youtube tutorial - adds 
+* listener event to icons and console logs.
+*/
+function main() {
+  rockIcon.addEventListener("click", (_e) => { 
+    choice("rk");
+    rockIcon.classList.toggle("user-picked");
+    console.log("rock");
+  })
+
+  papeIcon.addEventListener("click", (_e) => {
+    choice("pr");
+    papeIcon.classList.toggle("user-picked");
+    console.log("paper");
+  })
+
+  scisIcon.addEventListener("click", (_e) => {
+    choice("ss");
+    scisIcon.classList.toggle("user-picked");
+    console.log("scissors");
+  })
+
+  lizaIcon.addEventListener("click", (_e) => {
+    choice("ld");
+    lizaIcon.classList.toggle("user-picked");
+    console.log("lizard");
+  })
+
+  spocIcon.addEventListener("click", (_e) => {
+    choice("sk");
+    spocIcon.classList.toggle("user-picked");
+    console.log("spock")
+    
+  })
+ }
+
+main();
