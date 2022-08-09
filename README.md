@@ -156,4 +156,4 @@ I used the following sources to help guide my site creation and code manipulatio
   - Media
 Acknowledgements
 
-Many thanks to Precious Ijege for his feedback on this assignment, once again to the various sources of coding and styling that I resourced from and listed within the credits section. 
+Many thanks to Precious Ijege for his feedback on this assignment, once again to the various sources of coding and styling that I resourced from and listed within the credits section. I'd like to thank the following individuals in Tutor Support - Ed Bradley, 
