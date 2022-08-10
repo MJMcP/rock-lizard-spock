@@ -97,7 +97,7 @@ function convertToWord(string) {
     userScore++;
     userScoreTotal.innerHTML = userScore;      
     computerScoreTotal.innerHTML = computerScore;
-    v.textContent = resultText.innerHTML;
+    //v.textContent = resultText.innerHTML;
     resultText.innerHTML = `You chose ${convertToWord(captChoice)}. That beats the computer's ${convertToWord(computerChoice)}. Proceed to next round!`;
   }
 
@@ -105,33 +105,25 @@ function convertToWord(string) {
     computerScore++;
     userScoreTotal.innerHTML = userScore;   
     computerScoreTotal.innerHTML = computerScore;
-    v.textContent = resultText.innerHTML;
+    //v.textContent = resultText.innerHTML;
     resultText.innerHTML = `You chose ${convertToWord(captChoice)}. The computer chose ${convertToWord(computerChoice)}. Computer blocks your progress!`;
   }
   
   function draw(captChoice, computerChoice) {
-    v.textContent = resultText.innerHTML;
+    //v.textContent = resultText.innerHTML;
     resultText.innerHTML = `You chose ${convertToWord(captChoice)}. The computer chose ${convertToWord(computerChoice)}. Stalemate - you have another go!`;
   }
 
 // to hide or show div
 
-//function showOrHide() {
-  
-  engageBtn.onclick = function showOrHide() {
-    if (v.style.display === "flex") {
-      v.style.display = "none";
-    } else {
-      v.style.display = "flex";
-    }
-  };
+function showOrHide() {
+  if (v.style.display === "flex") {
 
- //if (v.style.display === "flex") {
-  //   v.style.display = "none";
- // } else {
- //   v.style.display = "flex";
-// }
-//}
+   v.style.display = "none";
+ } else {
+   v.style.display = "flex";
+ }
+}
 
 exitBtn.addEventListener('click', (e) => {
 

@@ -15,7 +15,7 @@ body {
     padding-top: 1.5rem;
 }
 
-.hidden {
+.hide {
     display: none;
 }
 
@@ -27,29 +27,6 @@ body {
 }
 
 /*  Game field  */
-
-
-.close-btn {
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: bold;
-    float: right;
-    color: #d1fd02;
-    margin: 3px 8px 0 0;
-    cursor: pointer;
-}
-
-#popup-box {
-    width: 300px;
-    font-size: 12px;
-    background-color: #291d2e;
-    color: #d1fd02;
-    padding: 1px 0;
-    line-height: 16px;
-    margin: 0px auto;
-    border-radius: 20px;
-    display: none;
-}
 
 .game-area {
     background-color: #291d2e;
@@ -82,13 +59,11 @@ body {
     text-align: center;
 }
 
-
 .user-picked {
     border: 4px solid #d1fd02;
     border-radius: 50%;
     padding: 4px;
 }
-
 
 .game-container {
     display: flex;
@@ -98,14 +73,6 @@ body {
     padding: 10px 0;
     flex-wrap: wrap;
 }
-
-/*.game-text {
-    display: flex;
-    min-width: 80%;
-    padding: 2px, 0;
-    margin: 6px auto;
-    justify-content: flex-end;
-}*/
 
 i {
     display: flex;
@@ -166,13 +133,12 @@ th {
     color: #f9f5f5;
     font-size: large;
     box-shadow: 2px 2px 2px 2px #686d50;
-  
 }
 
 .btn-grn:hover {
     background-color:#d1fd02;
     color:#291d2e
-    }
+}
 
 .game-rules-btn {
     background-color: #a095ab;
@@ -184,14 +150,13 @@ th {
 
 .game-rules-btn:hover {
     background-color:#d1fd02;
-    color:#291d2e
-    }
+    color:#291d2e    
+}
 
 .picked {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    /*align-items: baseline;*/
 }
 
 .declare {
@@ -232,7 +197,6 @@ th {
     padding-top: .5rem;        
 }
 
-
 .comp-tally {
     display: flex;                
     flex-direction: row;       
@@ -244,7 +208,7 @@ th {
 .results-area {
     display: inline-flex;
     flex-direction: row;
-    min-width: 538px;
+    min-width: 90%;
     margin: 0;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -254,26 +218,43 @@ th {
 }
 /* Responsive layout - when the screen is 768px wide or larger*/
 @media screen and (min-width: 768px) {
-}
 
-.results-area {
-    display: inline-flex;
-    flex-direction: row;
-    min-width: 300px;
-    margin: 0;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    margin-top: 1rem;
-}
+    #heading {
+        font-size: 3.5rem;
+    }
 
-.scoreboard {
-    display: inline;
+    .game-area{
+        width: 65%;
+        height: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1%;
+        
+    }
+
+    .results-area {
+        display: inline-flex;
+        flex-direction: row;
+        min-width: 65%;
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        margin-top: 1rem;
+    }
+    
+    cap-tally, .comp-tally, .exit {
+        display: flex;
+        flex-direction: row;
+        padding-top: 0.5rem;
+        padding: 0px;
+    }
+
 }
 
 /* Responsive layout - when the screen is 320px wide*/
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
 
     #heading {
         font-size: 2rem;
@@ -295,8 +276,9 @@ th {
     }
     
     .choice-first {
-        font-size: 1rem;
+        font-size: 1.5rem;
         text-align: center;
+    
     }
   
     .game-item {
@@ -347,7 +329,7 @@ th {
     .results-area {
         display: inline-flex;
         flex-direction: column;
-        min-width: 272px;
+        min-width: 90%;
         margin: 0;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -379,6 +361,14 @@ th {
     .comp-tally {
         display: flex;                
         flex-direction: row;       
+    }
+
+    .declare {
+        display: inline-block;
+        position: relative;
+        font-size: 1.2rem;
+        max-width: 90%;
+        align-content: center;
     }
     
 
