@@ -150,7 +150,9 @@ I used the following sources to help guide my site creation and code manipulatio
  - [Google Font](https://fonts.google.com) to create font-family import link.
  - [freeCodeCamp.org's YouTube tutorial for Rock Paper Scissors Game](https://www.youtube.com/watch?v=jaVNP3nIAv0) for execution ideas of coding combinations as well as styling insights.
   -[W3 Schools resources] (https://www.w3schools.com/) for reminders and insights on best HTML, CSS and JS options.
-  - [Veronica Lourens Rock Paper Scissors Game] (https://veronicalourens.github.io/rock-paper-scissors/index.html) This was one example that was recommended to me as a complete and functional game which I used as a basis for troubleshooting when stalled on my own coding efforts. 
+  - [Veronica Lourens Rock Paper Scissors Game] (https://veronicalourens.github.io/rock-paper-scissors/index.html) This was one example that was recommended to me as a complete and functional game which I used as a basis for troubleshooting when stalled on my own coding efforts.
+  - [TutorialsPoint.com}(https://www.tutorialspoint.com/how-to-hide-a-div-in-javascript-on-button-click) for extra clarity on button function
+  
 
 
   - Media
