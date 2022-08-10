@@ -202,20 +202,7 @@ th {
     flex-direction: row;       
 }
 
-/* Responsive layout - when the screen is 1080px wide or larger*/
-@media screen and (min-width: 1080px) {
-}
-.results-area {
-    display: inline-flex;
-    flex-direction: row;
-    min-width: 90%;
-    margin: 0;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    margin-top: 1rem;
-}
+
 /* Responsive layout - when the screen is 768px wide or larger*/
 @media screen and (min-width: 768px) {
 
