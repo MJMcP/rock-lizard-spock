@@ -3,11 +3,12 @@ let computerScore = 0;
 let userScoreTotal = document.getElementById("cap-total");
 let computerScoreTotal = document.getElementById("comp-total");
 
+let v = document.getElementById("play-field");
+let choiceFirst = document.getElementsByClassName("choice-first");
 let resultText = document.querySelector(".declare");
-let endResult = document.querySelector(".statement");
+
 let resultsTally= document.querySelector(".tally > span > span");
 
-let plays = document.getElementsByTagName("th"); //will select only first icon not others
 const exitBtn = document.getElementById("btn-leave");
 const engageBtn = document.getElementById("engage");
 
@@ -86,29 +87,51 @@ function convertToWord(string) {
   return "Spock";
 }
 
+
   
 /**
 * 4th created with assistance of freeCodeCamp youtube tutorial- creates the block 
 * code for the win loss and draw scenario  
 */
-function win(captChoice, computerChoice) { 
-  userScore++;
-  userScoreTotal.innerHTML = userScore;      
-  computerScoreTotal.innerHTML = computerScore;
-  resultText.innerHTML = `You chose ${convertToWord(captChoice)}. That beats the computer's ${convertToWord(computerChoice)}. Proceed to next round!`;
-}
+  function win(captChoice, computerChoice) { 
+    userScore++;
+    userScoreTotal.innerHTML = userScore;      
+    computerScoreTotal.innerHTML = computerScore;
+    v.textContent = resultText.innerHTML;
+    resultText.innerHTML = `You chose ${convertToWord(captChoice)}. That beats the computer's ${convertToWord(computerChoice)}. Proceed to next round!`;
+  }
 
-function loss(captChoice, computerChoice) {
-  computerScore++;
-  userScoreTotal.innerHTML = userScore;   
-  computerScoreTotal.innerHTML = computerScore;
-  resultText.innerHTML = `You chose ${convertToWord(captChoice)}. The computer chose ${convertToWord(computerChoice)}. Computer blocks your progress!`;
-}
+  function loss(captChoice, computerChoice) {
+    computerScore++;
+    userScoreTotal.innerHTML = userScore;   
+    computerScoreTotal.innerHTML = computerScore;
+    v.textContent = resultText.innerHTML;
+    resultText.innerHTML = `You chose ${convertToWord(captChoice)}. The computer chose ${convertToWord(computerChoice)}. Computer blocks your progress!`;
+  }
   
-function draw(captChoice, computerChoice) {
-  resultText.innerHTML = `You chose ${convertToWord(captChoice)}. The computer chose ${convertToWord(computerChoice)}. Stalemate - you have another go!`;
-}
+  function draw(captChoice, computerChoice) {
+    v.textContent = resultText.innerHTML;
+    resultText.innerHTML = `You chose ${convertToWord(captChoice)}. The computer chose ${convertToWord(computerChoice)}. Stalemate - you have another go!`;
+  }
 
+// to hide or show div
+
+//function showOrHide() {
+  
+  engageBtn.onclick = function showOrHide() {
+    if (v.style.display === "flex") {
+      v.style.display = "none";
+    } else {
+      v.style.display = "flex";
+    }
+  };
+
+ //if (v.style.display === "flex") {
+  //   v.style.display = "none";
+ // } else {
+ //   v.style.display = "flex";
+// }
+//}
 
 exitBtn.addEventListener('click', (e) => {
 
@@ -116,22 +139,7 @@ exitBtn.addEventListener('click', (e) => {
   computerScoreTotal.innerText = 0;
   resultText.innerHtml = "";
 });
-
   // ensures settings returned to start settings.
-
-/**
- * Creates the text for the end of game statement 
- */
-function endGame(resultsTally){
-  if(userScore > computerScore ) {
-    resultText.innerHTML = `Congratulations! You have regained control of the ship. Time to Boldly Go...`;
-  } else if (computerScore > userScore) {
-    resultText.innerHTML = `RED ALERT! Computer has set the self destruct! Detonation in 5...4...3`;
-  }
-  }
-
-
-
 
   /**
 * 1st created with the assistance of freeCodeCamp youtube tutorial - adds 
