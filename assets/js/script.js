@@ -3,11 +3,13 @@ let computerScore = 0;
 let userScoreTotal = document.getElementById("cap-total");
 let computerScoreTotal = document.getElementById("comp-total");
 
-let v = document.getElementById("play-field");
 let choiceFirst = document.getElementsByClassName("choice-first");
 let resultText = document.querySelector(".declare");
+let champText = document.querySelector(".statement");
 
 let resultsTally= document.querySelector(".tally > span > span");
+
+let vanish = document.getElementsByClassName("beats-info");
 
 const exitBtn = document.getElementById("btn-leave");
 const engageBtn = document.getElementById("engage");
@@ -76,8 +78,6 @@ function gameCompChoice() {
 /**
 * 5th created with assistance of freeCodeCamp youtube tutorial - inserts a human 
 * readable word into the results notice the win() function's scoreBoard.innerHTML. 
-* This element will be displayed on the second play stage but for the moment, 
-* it is included here to ensure the coding actually works.
 */
 function convertToWord(string) {
   if (string === "rk") return "Rock";
@@ -97,7 +97,6 @@ function convertToWord(string) {
     userScore++;
     userScoreTotal.innerHTML = userScore;      
     computerScoreTotal.innerHTML = computerScore;
-    //v.textContent = resultText.innerHTML;
     resultText.innerHTML = `You chose ${convertToWord(captChoice)}. That beats the computer's ${convertToWord(computerChoice)}. Proceed to next round!`;
   }
 
@@ -105,25 +104,14 @@ function convertToWord(string) {
     computerScore++;
     userScoreTotal.innerHTML = userScore;   
     computerScoreTotal.innerHTML = computerScore;
-    //v.textContent = resultText.innerHTML;
     resultText.innerHTML = `You chose ${convertToWord(captChoice)}. The computer chose ${convertToWord(computerChoice)}. Computer blocks your progress!`;
   }
   
   function draw(captChoice, computerChoice) {
-    //v.textContent = resultText.innerHTML;
     resultText.innerHTML = `You chose ${convertToWord(captChoice)}. The computer chose ${convertToWord(computerChoice)}. Stalemate - you have another go!`;
   }
 
-// to hide or show div
 
-function showOrHide() {
-  if (v.style.display === "flex") {
-
-   v.style.display = "none";
- } else {
-   v.style.display = "flex";
- }
-}
 
 exitBtn.addEventListener('click', (e) => {
 
@@ -131,7 +119,7 @@ exitBtn.addEventListener('click', (e) => {
   computerScoreTotal.innerText = 0;
   resultText.innerHtml = "";
 });
-  // ensures settings returned to start settings.
+ 
 
   /**
 * 1st created with the assistance of freeCodeCamp youtube tutorial - adds 
@@ -139,31 +127,31 @@ exitBtn.addEventListener('click', (e) => {
 */
 function main() {
   rockIcon.addEventListener("click", (_e) => { 
-    choice("rk");
+    removeStyles();
     rockIcon.classList.toggle("user-picked");
     console.log("rock");
   })
 
   papeIcon.addEventListener("click", (_e) => {
-    choice("pr");
+    removeStyles();
     papeIcon.classList.toggle("user-picked");
     console.log("paper");
   })
 
   scisIcon.addEventListener("click", (_e) => {
-    choice("ss");
+    removeStyles();
     scisIcon.classList.toggle("user-picked");
     console.log("scissors");
   })
 
   lizaIcon.addEventListener("click", (_e) => {
-    choice("ld");
+    removeStyles();
     lizaIcon.classList.toggle("user-picked");
     console.log("lizard");
   })
 
   spocIcon.addEventListener("click", (_e) => {
-    choice("sk");
+    removeStyles();
     spocIcon.classList.toggle("user-picked");
     console.log("spock")
     
@@ -171,3 +159,43 @@ function main() {
  }
 
 main();
+
+// allows for the selection of a single icon at any one time
+function removeStyles() {
+  const items = document.querySelectorAll("th");
+  items.forEach(item => {
+      item.classList.remove("user-picked");
+  })
+};
+
+
+
+
+engageBtn.addEventListener("click", () => {
+  const clickedItem = document.querySelector(".user-picked");
+  choice(clickedItem.id);
+});
+
+
+function winTotal() {
+  let winningTotal = document.getElementsByClassName('total').innerHTML;
+  document.getElementsByClassName('total').innerHTML = ++winTotal;
+
+  if (winTotal === 3) {
+    bossWin(winTotal);
+  }
+}
+
+function bossWin(winTotal) {
+  let gameIsAlive = false;
+
+  if (winTotal === 3 && gameIsAlive === false) {
+    if (userScore > computerScore) {
+      champText.innerHTML = "Success! You regained control of the ship. Full speed ahead!";
+    } else if (computerScore > userScore) {
+      champText.innerHTML ="Warning, self desstruct sequence has been initiated. Detonation in 5...4..."
+    }else {
+      champText.style.display = "none";
+    }
+  }
+}
