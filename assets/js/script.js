@@ -85,7 +85,7 @@ function convertToWord(string) {
   if (string === "ld") return "Lizard";
   return "Spock";
 }
-  
+
   
 /**
 * 4th created with assistance of freeCodeCamp youtube tutorial- creates the block 
@@ -108,6 +108,16 @@ function loss(captChoice, computerChoice) {
 function draw(captChoice, computerChoice) {
   resultText.innerHTML = `You chose ${convertToWord(captChoice)}. The computer chose ${convertToWord(computerChoice)}. Stalemate - you have another go!`;
 }
+
+
+exitBtn.addEventListener('click', (e) => {
+
+  userScoreTotal.innerText = 0;
+  computerScoreTotal.innerText = 0;
+  resultText.innerHtml = "";
+});
+
+  // ensures settings returned to start settings.
 
 /**
  * Creates the text for the end of game statement 
