@@ -28,6 +28,29 @@ body {
 
 /*  Game field  */
 
+
+.close-btn {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    float: right;
+    color: #d1fd02;
+    margin: 3px 8px 0 0;
+    cursor: pointer;
+}
+
+#popup-box {
+    width: 300px;
+    font-size: 12px;
+    background-color: #291d2e;
+    color: #d1fd02;
+    padding: 1px 0;
+    line-height: 16px;
+    margin: 0px auto;
+    border-radius: 20px;
+    display: none;
+}
+
 .game-area {
     background-color: #291d2e;
     color: #d1fd02;
@@ -114,7 +137,7 @@ th {
 /* button style section*/
 .btn {
     width: 220px;
-    height: 60px;
+    height: 45px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     font-family: "Quattrocento Sans", sans-serif;
@@ -317,7 +340,7 @@ th {
     .btn-rd, .btn-grn, #btn-leave, .btn {
         width: 120px;
         height: 30px;
-        font-size: smaller
+        font-size: smaller;
     }
     
     
